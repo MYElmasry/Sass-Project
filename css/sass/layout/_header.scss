@@ -41,6 +41,9 @@
       display: flex;
       li {
         width: 20%;
+        @include maxMobile {
+          width: 100%;
+        }
         font-size: 18px;
         text-align: center;
         a {
@@ -62,39 +65,3 @@
     }
   }
 }
-
-// .header {
-//     padding: 20px 0;
-//     overflow: hidden;
-//     border-bottom: 1px solid $greyColor;
-//     .logo {
-//       width: 30%;
-//       float: $float-left;
-//       h1 {
-//         margin-bottom: 0;
-//       }
-//       p {
-//       }
-//     }
-//     .navbar {
-//       width: 70%;
-//       float: $float-left;
-//       background-color: $redColor;
-//       border-radius: 15px;
-//       li {
-//         width: 20%;
-//         float: $float-left;
-//         font-size: 18px;
-//         text-align: center;
-//         a {
-//           color: #fff;
-//           text-decoration: none;
-//           display: block;
-//           padding: 20px 10px;
-//           &:hover {
-//             color: #ddd;
-//           }
-//         }
-//       }
-//     }
-//   }
