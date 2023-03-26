@@ -1,0 +1,150 @@
+.slider {
+  blockquote {
+    font: {
+      size: 20px;
+      style: italic;
+      family: Tahoma, Arial;
+    }
+    line-height: 1.7;
+    text-align: center;
+    color: #5e5e5e;
+    width: 80%;
+    margin: 30px auto;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .bullets {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    li {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-color: $greyColor;
+      border-radius: 50%;
+      border: 3px solid $greyColor;
+      cursor: pointer;
+      transition: border 0.3s;
+      margin: 0 2px;
+      &.active,
+      &:hover {
+        border: 3px solid #333;
+      }
+    }
+  }
+}
+
+.services {
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .service-box {
+      margin-top: 10px;
+      @include maxSmall {
+        width: 100%;
+      }
+      @include minMedium {
+        width: (100% / 2);
+      }
+      @include minLarge {
+        width: (100% / 3);
+      }
+      padding-right: 10px;
+      &:last-child {
+        padding-right: 0;
+      }
+      .service-title {
+        color: #666;
+        i {
+          font-size: 35px;
+          position: relative;
+          top: 4px;
+        }
+      }
+
+      .service-desc {
+        color: #777;
+        line-height: 1.5;
+        text-align: justify;
+      }
+      .link {
+        color: $redColor;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.our-players {
+  .players-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .player-box {
+      margin: 30px 0;
+      @include maxSmall {
+        width: (100% / 1);
+      }
+      @include minMedium {
+        width: (100% / 3);
+      }
+      @include minLarge {
+        width: (100% / 5);
+      }
+      padding-right: 10px;
+      .player-img {
+        max-width: 100%;
+        display: block;
+        margin: auto;
+      }
+      .player-title {
+        color: #666;
+        font-weight: normal;
+        span {
+          font-weight: bold;
+        }
+      }
+
+      .player-desc {
+        color: #777;
+        line-height: 1.5;
+        text-align: justify;
+      }
+      .link {
+        color: $redColor;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.lorem {
+  .lorem-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .lorem-box {
+      @include maxSmall {
+        width: (100% / 1);
+      }
+      @include minMedium {
+        width: (100% / 2);
+      }
+      @include minLarge {
+        width: (100% / 3);
+      }
+      padding-right: 10px;
+      margin: 30px 0;
+      .lorem-img {
+        max-width: 100%;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+}

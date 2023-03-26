@@ -1,0 +1,21 @@
+* {
+  @include prefixer(box-sizing, border-box, webkit moz);
+}
+
+.container {
+  @include maxMobile {
+    width: 100%;
+  }
+  @include minSmall {
+    width: 750px;
+  }
+  @include minMedium {
+    width: 970px;
+  }
+  @include minLarge {
+    width: 1170px;
+  }
+  margin: auto;
+  padding: 0 15px;
+  position: relative;
+}
