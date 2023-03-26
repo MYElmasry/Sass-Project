@@ -83,6 +83,9 @@
 //       border-radius: 15px;
 //       li {
 //         width: 20%;
+           @include maxMobile {
+             width: 100%;
+           }
 //         float: $float-left;
 //         font-size: 18px;
 //         text-align: center;
